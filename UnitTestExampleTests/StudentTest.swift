@@ -23,19 +23,19 @@ class StudentTest: XCTestCase {
     func testFirstName(){
         
         let student = Student(firstName: "Mac", lastName: "John")
-        XCTAssertFalse(student.isFirstNameVaild())
+        XCTAssertFalse(student.isFirstNameValid())
         
         let student2 = Student(firstName: "John", lastName: "Ken")
-        XCTAssertTrue(student2.isFirstNameVaild())
+        XCTAssertTrue(student2.isFirstNameValid())
     }
     
     func testLastName(){
         
         let student = Student(firstName: "Mac", lastName: "John")
-        XCTAssertTrue(student.isLastNameVaild())
+        XCTAssertTrue(student.isLastNameValid())
         
         let student2 = Student(firstName: "John", lastName: "Ken")
-        XCTAssertFalse(student2.isLastNameVaild())
+        XCTAssertFalse(student2.isLastNameValid())
     }
     
     func testAddFriend(){

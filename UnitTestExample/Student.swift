@@ -21,12 +21,12 @@ class Student{
         self.lastName = lastName;
     }
     
-    func isFirstNameVaild()->Bool{
+    func isFirstNameValid()->Bool{
         
         return self.firstName.count > 3
     }
     
-    func isLastNameVaild()->Bool{
+    func isLastNameValid()->Bool{
         
         return self.lastName.count > 3
     }
